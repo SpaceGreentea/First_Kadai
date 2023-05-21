@@ -407,6 +407,7 @@ footer {
 
 .copyright {
     margin-top: 64px;
+    padding-bottom: 12px;
     font-family: "Noto Sans Regular", "Noto Sans JP Regular";
     font-weight: normal;
     font-size: 12px;
