@@ -138,6 +138,7 @@ header .navi ul li:nth-child(5) {
 }
 
 /* メイン　サイドバー　エリア　*/
+/* メインエリア */
 .main_side_area {
     display: flex;
     justify-content: space-between;
@@ -214,12 +215,204 @@ header .navi ul li:nth-child(5) {
     text-decoration: none;
 }
 
+/* サイドバーエリア */
+
 .side_area {
     width: 345px;
 }
 
+.author {
+    text-align: center;
+    margin-bottom: 35px;
+}
 
+.author img {
+    width: 130px;
+    height: 130px;
+    background: #dedede;
+    border-radius: 50%;
+}
 
+.author_content {
+    margin-bottom: 57px;
+}
+
+.author_name {
+    font-family: "Noto Sans Bold", "Noto Sans JP Bold";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 37px;
+}
+
+.author_text {
+    font-family: "Noto Sans Regular", "Noto Sans JP Regular";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+}
+
+.ranking_title {
+    font-family: "Noto Sans Bold", "Noto Sans JP Bold";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 34px;
+}
+
+.ranking_content img {
+    aspect-ratio: 16 /9;
+    max-width: 100%;
+}
+
+.ranking_content p {
+    font-family: "Noto Sans Regular", "Noto Sans JP Regular";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+    margin-top: 3px;
+}
+
+.ranking_space {
+    margin-bottom: 31px;
+}
+
+/* サイドバーアーカイブ */
+.archive_title {
+    font-family: "Noto Sans Bold", "Noto Sans JP Bold";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 34px;
+    margin-top: 66px;
+}
+
+.archive_nav {
+    padding-left: 0;
+}
+
+.archive_nav li {
+    list-style: none;
+    border-top: 1px solid #777;
+    font-family: "Noto Sans Regular", "Noto Sans JP Regular";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+}
+
+.archive_nav li:last-child {
+    border-bottom: 1px solid #777;
+}
+
+footer {
+    width: 100vw;
+    margin: 140px calc(50% - 50vw) 0;
+    padding: 55px calc(50vw - 50%) 0px;
+    background: #f7f7f7;
+}
+
+.footer_contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    width: 345px;
+    margin-right: 71px;
+}
+
+.about_title {
+    font-family: "Noto Sans Bold", "Noto Sans JP Bold";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 37px;
+}
+
+.about_sentence {
+    font-family: "Noto Sans Regular", "Noto Sans JP Regular";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.about_link {
+    font-family: "Noto Sans Regular", "Noto Sans JP Regular";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.menu {
+    width: 350px;
+    margin-right: 53px;
+}
+
+.menu_title {
+    font-family: "Noto Sans Bold", "Noto Sans JP Bold";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 34px;
+}
+
+.menu_navi {
+    padding-left: 0;
+}
+
+.menu_navi li {
+    border-top: 1px solid #777;
+    font-family: "Noto Sans Regular", "Noto Sans JP Regular";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #333;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+}
+
+.menu_navi:last-child {
+    border-bottom: 1px solid #777;
+}
+
+.twitter {
+    width: 347px;
+}
+
+.twitter_title {
+    font-family: "Noto Sans Bold", "Noto Sans JP Bold";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 34px;
+}
+
+.copyright {
+    margin-top: 64px;
+    font-family: "Noto Sans Regular", "Noto Sans JP Regular";
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+}
 
 /* メディアクエリ　*/
 @media screen and (max-width: 767px) {
@@ -240,5 +433,46 @@ header .navi ul li:nth-child(5) {
 
     .pickup_area_div3 {
         padding-top: 30px;
+    }
+
+    /* メイン　サイドバー　エリア */
+    .main_side_area {
+        display: block;
+    }
+
+    .main_area {
+        width: auto;
+        margin-right: 0;
+    }
+
+    /* サイドバーエリア */
+    .side_area {
+        width: auto;
+        margin-top: 85px;
+    }
+
+    .archive_nav li {
+        padding-left: 36px;
+    }
+
+    /* フッター */
+    .footer_contents {
+        display: block;
+    }
+
+    .about {
+        width: auto;
+        margin-right: 8px;
+    }
+
+    .menu {
+        width: auto;
+        margin-right: 0;
+        margin-top: 59px;
+    }
+
+    .twitter {
+        margin-top: 35px;
+        width: auto;
     }
 }
